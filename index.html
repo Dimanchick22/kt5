@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= "UTF-8">
+        <title>КТ-5 голубенко </title>
+        <style>
+            @keyframes movie {
+                from {
+                    left: 0px;
+                }
+                to {
+                    left:calc(100% - 250px);
+                }
+            }
+            .container{
+                width: 200px;
+                height: 200px;
+                animation-name: movie;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                position: relative;
+                top:  100px;
+                left: 0px;
+            }
+            .block{
+                position: absolute;
+                width: 200px;
+                height: 50px;
+                background-color: rgb(237, 14, 36);
+                right: 0px;
+                bottom: 20px;
+                border-radius: 10%;
+            }
+            .round{
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background-color: rgb(11, 10, 10);
+                right: 0px;
+                bottom: 0px;
+                border-radius: 100%;
+            }
+            .left{
+                left:0px
+            }
+            .door{
+                height: 50px;
+                width: 100px;
+                right: 50px;
+                background-color:rgb(197, 15, 33);
+                border-radius: 10%;
+                position: absolute;
+            }
+            .window{
+                background-color: rgb(12, 114, 139);
+                height: 30px;
+                width: 25px;
+                top: 0px;
+                right: 0px;
+                position: absolute;
+            }
+        </style>
+    </head>
+            <div class="container">
+                <div class="block">
+                    <div class="door">
+                    </div>
+                    <div class = "window"></div>
+                </div>
+                <div class="round">
+                </div>
+                <div class="round left">
+                </div>
+            </div>
+            <div class="test"></div>
+    </body>
+</html>
